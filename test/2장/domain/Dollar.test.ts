@@ -1,4 +1,4 @@
-import {Dollar} from "../../src/domain/Dollar";
+import {Dollar} from "../../../src/2장/domain/Dollar";
 
 test('곱셈 테스트', () => {
     const dollar = new Dollar(5);

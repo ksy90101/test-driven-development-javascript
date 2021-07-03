@@ -8,5 +8,6 @@
         "moduleResolution": "node",
         "allowJs": true,
         "sourceMap": true,
+        "esModuleInterop": true
     }
 }
