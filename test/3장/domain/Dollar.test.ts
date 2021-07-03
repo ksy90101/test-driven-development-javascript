@@ -1,13 +1,15 @@
 import {Dollar} from "../../../src/3장/domain/Dollar";
 
-test('곱셈 테스트', () => {
-    const dollar = new Dollar(5);
+test('equals Test', () => {
+    const dollar1 = new Dollar(5);
+    const dollar2 = new Dollar(5);
 
-    let multiplyDollar = dollar.times(2);
+    expect(dollar1).toEqual(dollar2);
+});
 
-    expect(multiplyDollar.amount).toBe(10);
+test('equal method Test', () => {
+    const dollar1 = new Dollar(5);
+    const dollar2 = new Dollar(5);
 
-    multiplyDollar = dollar.times(3);
-
-    expect(multiplyDollar.amount).toBe(15);
+    expect(dollar1.equals(dollar2)).toBeTruthy()
 });

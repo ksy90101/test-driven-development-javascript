@@ -1,4 +1,4 @@
-export class Dollar{
+export class Dollar {
 
     amount: number;
 
@@ -6,8 +6,12 @@ export class Dollar{
         this.amount = amount;
     }
 
-    times(multiplier: number){
+    public times(multiplier: number) {
         const multiplyDollar = this.amount * multiplier;
         return new Dollar(multiplyDollar);
+    }
+
+    public equals(object: Dollar) {
+        return this.amount === object.amount;
     }
 }

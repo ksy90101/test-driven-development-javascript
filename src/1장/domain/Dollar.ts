@@ -7,7 +7,6 @@ export class Dollar{
     }
 
     times(multiplier: number){
-        const multiplyDollar = this.amount * multiplier;
-        return new Dollar(multiplyDollar);
+        this.amount *= multiplier;
     }
 }

@@ -3,7 +3,11 @@ import {Dollar} from "../../../src/2장/domain/Dollar";
 test('곱셈 테스트', () => {
     const dollar = new Dollar(5);
 
-    dollar.times(2);
+    let multiplyDollar = dollar.times(2);
 
-    expect(dollar.amount).toBe(10);
+    expect(multiplyDollar.amount).toBe(10);
+
+    multiplyDollar = dollar.times(3);
+
+    expect(multiplyDollar.amount).toBe(15);
 });
