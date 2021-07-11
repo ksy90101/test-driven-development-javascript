@@ -7,8 +7,8 @@ export class Franc {
     }
 
     public times(multiplier: number) {
-        const multiplyDollar = this.amount * multiplier;
-        return new Franc(multiplyDollar);
+        const multiplyFranc = this.amount * multiplier;
+        return new Franc(multiplyFranc);
     }
 
     public equals(object: Franc) {
